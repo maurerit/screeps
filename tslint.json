@@ -1,0 +1,43 @@
+{
+    "rulesDirectory": "tslint-plugin-prettier",
+    "extends": [
+        "tslint:recommended",
+        "tslint-config-prettier"
+    ],
+    "rules": {
+        "forin": false,
+        "interface-name": [
+            false,
+            "never-prefix"
+        ],
+        "member-ordering": [
+            false
+        ],
+        "no-console": [
+            false
+        ],
+        "no-namespace": [
+            true,
+            "allow-declarations"
+        ],
+        "variable-name": [
+            true,
+            "ban-keywords",
+            "check-format",
+            "allow-pascal-case",
+            "allow-leading-underscore"
+        ],
+        // Fuck linting alphabetical sorting of things...
+        "object-literal-sort-keys": false,
+        // Could be temporary but who knows... that could spell out that we plan on doing something here...
+        "no-empty": false,
+        // Temporary
+        "no-string-literal": false,
+        "interface-over-type-literal": [
+            false
+        ],
+        "prefer-const": [
+            false
+        ]
+    }
+}
